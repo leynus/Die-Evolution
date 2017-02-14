@@ -19,8 +19,7 @@
 <li>Die Schlange</li>
 <li>Zombiekrabben</li>
 <li>Game Over</li>
-<li>Der Score</li>
-</ul>
+<li>Der Score</li></ul>
 <li>PLäne für die Zukunft</li>
 </ul>
 <h2 style="color:green;">Anfänge</h2>
