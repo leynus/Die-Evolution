@@ -6,33 +6,41 @@
 <h2>Inhaltsverzeichnis</h2>
 <ul>
 <li><a href="#anf">Anfänge</a></li>
-<li>Sinn des Programms</li>
-<li>Ablauf des Spiels</li>
-<li>Ablauf der Programmierung</li>
+<li><a href="#sdp">Sinn des Programms</a></li>
+<li><a href="#ads">Ablauf des Spiels</a></li>
+<li><a href="#adp">Ablauf der Programmierung</a></li>
 <ul>
-<li>Erste Actor</li>
-<li>Nahrungskette</li>
-<li>Zuschauer als Spieler</li>
-<li>Musik</li>
-<li>Fortpflanzung</li>
-<li>Einführung von Hunger</li>
-<li>Die Schlange</li>
-<li>Zombiekrabben</li>
-<li>Game Over</li>
-<li>Der Score</li>
+<li><a href="#era">Erste Actor</a></li>
+<li><a href="#nah">Nahrungskette</a></li>
+<li><a href="#zas">Zuschauer als Spieler</a></li>
+<li><a href="#mus">Musik</a></li>
+<li><a href="#for">Fortpflanzung</a></li>
+<li><a href="#eva">Einführung von Hunger</a></li>
+<li><a href="#sch">Die Schlange</a></li>
+<li><a href="#zom">Zombiekrabben</a></li>
+<li><a href="#geo">Game Over</a></li>
+<li><a href="#sco">Der Score</a></li>
 </ul>
-<li>PLäne für die Zukunft</li>
+<li><a href="#pfz">PLäne für die Zukunft</a></li>
 </ul>
 <h2 style="color:green;">
 <a id="anf">Anfänge</a>
 </h2>
 <p>Unsere eigentliche Idee war es, mit einem RaspberryPi zu arbeiten. In den ersten Stunden probierten wir dies aus und installierten ein neues Betriebssystem auf einem dieser Computer. Da wir uns diese Arbeit allerdings anders vorgestellt hatten, hörten wir recht schnell mit diesem Projekt auf und ließen uns eine neue Idee einfallen. Unser Ziel war (und ist) es ein Doppelkopfspiel mit Greenfoot zu programmieren. Dafür müssten wir uns aber erstmal mit dem Programm und Programmierung allgemein auseinandersetzen. Wir begannen mit den Greenfoot-Stride Lernaktivitäten. Später haben wir auf Grundlage dieser, eigene Ideen in die Welt gebracht, woraus nach einer Zeit ein Spiel entstanden ist.</p>
-<h2 style="color:darkorchid;">Sinn des Programms</h2>
+<h2 style="color:darkorchid;">
+<a id="sdp">Sinn des Programms</a>
+</h2>
 <p>Dieses Programm dient der Einarbeitung in das Programm "Greenfoot", weswegen es sowohl Elemente eines Spiels der aktiven Steuerung eines "Actors", als auch Elemente eines sich selbst entwickelnden Programms (evolutionssimulierende Ansätze) enthält. So mag es einem Betrachter erscheinen, als könne man einige Befehlsketten anders ausdrücken.</p>
-<h2 style="color:royalblue;">Ablauf des Spiels</h2>
+<h2 style="color:royalblue;">
+<a id="ads">Ablauf des Spiels</a>
+</h2>
 <p>In diesem Spiel steuert man mit den Pfeiltasten einen Wurm. Mit der rechten und linken Pfeiltaste dreht sich der Wurm, mit der oberen und unteren Taste bewegt sich der Wurm vorwärts und rückwärts. In der Spielwelt gibt es noch drei weitere Spielklassen, die vom Computer gesteuert werden. Die Krabben, die Hummer und die Seesterne sind die anderen Klassen in diesem Spiel. Sie fressen sich gegenseitig und vermehren sich, wenn sie jemanden gefressen haben. Wenn sie zu lange nichts fressen, verhungern sie. Der Wurm hat die Fähigkeit, jedes andere Tier zu fressen und kann von keinem anderen Tier getötet werden. Er verhungert aber auch, wenn er zu lange nichts gegessen hat. Wenn der Wurm eine Krabbe frisst, erscheint diese nach einer Zeit als Zombiekrabbe am Todesort wieder. Zombiekrabben sind doppelt so schnell, wie normale Krabben und stecken diese bei Berührung an. Treffen sie auf Hummer oder Seesterne, sterben beide Tiere. Ziel des Spiels ist es, so lange wie möglich mit dem Wurm zu überleben.</p>
-<h2 style="color:indianred;">Ablauf der Programmierung<h2>
-<h3 style="color:darkturquoise;">Erste Actor</h3>
+<h2 style="color:indianred;">
+<a id="adp">Ablauf der Programmierung</a>
+<h2>
+<h3 style="color:darkturquoise;">
+<a id="era">Erste Actor</a>
+</h3>
 <p>Als Grundlage verwenden wir die "Crab-World" Vorlage. Wir haben damit angefangen, dass wir eine einfache Crab.class in die World eingefügt haben. Durch den Befehl "move (5)" bewegt sich diese Crab.class geradeaus. Da die World begrenzt ist, veränderten wir die Bewegungsrichtung beim Auftreffen auf die Wand (Äußeres Ende der Welt). Die Richtung sollte nicht konkret vorgegeben sein, sondern immer zufällig sein. Mit dem Befehl "if (isAtEdge()) { turn(Greenfoot.getRandomNumber(90) - 45); }" konnten wir dies umsetzen. Wir haben mehrere Objekte der Crab.class in die World hinzugefügt. Außerdem haben wir die starfish.class und die lobster.class mit gleichen Eigenschaften wie die Crab.class eingefügt.</p>
 <h3 style="color:darkturquoise;">Nahrungskette</h3>
 <p>Unser vorläufiges Ziel war es nun, eine Art Evolutionssimulation zu erstellen. Die drei verschiedenen Klassen sollten je eine Klasse haben, die sie fressen (aus der Welt entfernen) und von einer Klasse gefressen werden (aus der Welt entfernt werden). Wenn die Crab.class die starfish.class berührt, entfernt sie diese aus der World.</p>
