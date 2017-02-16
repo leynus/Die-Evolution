@@ -89,7 +89,7 @@ Pläne für die Zukunft
 <p>Wie schon vorher gesagt, ist dieses Programm dazu da, sich in Greenfoot herein zu arbeiten. Unser finales Ziel ist immernoch ein Doppelkopfspiel zu entwickeln. Wann genau wir damit beginnen, ist jedoch noch unklar.</p>
 <h2>Classes</h2>
 <h3>Crab.class</h3>
-<p><img src="crab_class.png" alt="crab_class">
+<p><img src="crab_class_cut1.png" alt="crab_class">
 </p>
 <h3>lobster.class</h3>
 <p><img src="lobster_class.png" alt="lobster_class">
