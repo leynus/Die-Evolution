@@ -41,7 +41,9 @@ Ablauf der Programmierung
 <h3 style="color:darkturquoise;" id="era">
 Erste Actor
 </h3>
-<p>Als Grundlage verwenden wir die "Crab-World" Vorlage. Wir haben damit angefangen, dass wir eine einfache Crab.class in die World eingefügt haben. Durch den Befehl "move (5)" bewegt sich diese Crab.class geradeaus. Da die World begrenzt ist, veränderten wir die Bewegungsrichtung beim Auftreffen auf die Wand (Äußeres Ende der Welt). Die Richtung sollte nicht konkret vorgegeben sein, sondern immer zufällig sein. Mit dem Befehl "if (isAtEdge()) { turn(Greenfoot.getRandomNumber(90) - 45); }" konnten wir dies umsetzen. Wir haben mehrere Objekte der Crab.class in die World hinzugefügt. Außerdem haben wir die starfish.class und die lobster.class mit gleichen Eigenschaften wie die Crab.class eingefügt.<img src="crab.png" alt="crab" style="width:420px;height:420px;border:0;"></p>
+<p>Als Grundlage verwenden wir die "Crab-World" Vorlage. Wir haben damit angefangen, dass wir eine einfache Crab.class in die World eingefügt haben. Durch den Befehl "move (5)" bewegt sich diese Crab.class geradeaus. Da die World begrenzt ist, veränderten wir die Bewegungsrichtung beim Auftreffen auf die Wand (Äußeres Ende der Welt). Die Richtung sollte nicht konkret vorgegeben sein, sondern immer zufällig sein. Mit dem Befehl "if (isAtEdge()) { turn(Greenfoot.getRandomNumber(90) - 45); }" konnten wir dies umsetzen. Wir haben mehrere Objekte der Crab.class in die World hinzugefügt. Außerdem haben wir die starfish.class und die lobster.class mit gleichen Eigenschaften wie die Crab.class eingefügt.
+<img src="crab.png" alt="crab" style="width:80px;height:49px;border:50;">
+</p>
 <h3 style="color:darkturquoise;" id="nah">
 Nahrungskette
 </h3>
