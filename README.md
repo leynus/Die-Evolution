@@ -78,6 +78,7 @@ Zombiekrabben
 Game Over
 </h3>
 <p>Zum Schluss haben wir ein "Game Over" Schriftzug in der World entstehen lassen. Die Grafik dazu haben wir selbst erstellt. Dieser tritt in der Mitte des Spielfeldes auf, wenn die Schlange das linke Ende der Karte erreicht hab.</p>
+<img src="game_over.png" alt="game_over">
 <h3 style="color:darkturquoise;" id="sco">
 Der Score
 </h3>
