@@ -35,7 +35,7 @@ Sinn des Programms
 Ablauf des Spiels
 </h2>
 <p>In diesem Spiel steuert man mit den Pfeiltasten einen Wurm. Mit der rechten und linken Pfeiltaste dreht sich der Wurm, mit der oberen und unteren Taste bewegt sich der Wurm vorwärts und rückwärts. In der Spielwelt gibt es noch drei weitere Spielklassen, die vom Computer gesteuert werden. Die Krabben, die Hummer und die Seesterne sind die anderen Klassen in diesem Spiel. Sie fressen sich gegenseitig und vermehren sich, wenn sie jemanden gefressen haben. Wenn sie zu lange nichts fressen, verhungern sie. Der Wurm hat die Fähigkeit, jedes andere Tier zu fressen und kann von keinem anderen Tier getötet werden. Er verhungert aber auch, wenn er zu lange nichts gegessen hat. Wenn der Wurm eine Krabbe frisst, erscheint diese nach einer Zeit als Zombiekrabbe am Todesort wieder. Zombiekrabben sind doppelt so schnell, wie normale Krabben und stecken diese bei Berührung an. Treffen sie auf Hummer oder Seesterne, sterben beide Tiere. Ziel des Spiels ist es, so lange wie möglich mit dem Wurm zu überleben.</p>
-<img src="aufstellung.png" alt="aufstellung" style="width:80px;height:49px;border:0;">
+<img src="aufstellung.png" alt="aufstellung" style="width:1280px;height:984px;border:0;">
 <h2 style="color:indianred;" id="adp">
 Ablauf der Programmierung
 </h2>
