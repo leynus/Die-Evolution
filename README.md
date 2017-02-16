@@ -87,3 +87,19 @@ Der Score
 Pläne für die Zukunft
 </h2>
 <p>Wie schon vorher gesagt, ist dieses Programm dazu da, sich in Greenfoot herein zu arbeiten. Unser finales Ziel ist immernoch ein Doppelkopfspiel zu entwickeln. Wann genau wir damit beginnen, ist jedoch noch unklar.</p>
+<h2>Classes</h2>
+<h3>Crab.class</h3>
+<p><img src="crab_class.png" alt="crab_class">
+</p>
+<h3>lobster.class</h3>
+<p><img src="lobster_class.png" alt="lobster_class">
+</p>
+<h3>starfish.class</h3>
+<p><img src="starfish_class.png" alt="starfish_class">
+</p>
+<h3>worm.class</h3>
+<p><img src="worm_class.png" alt="worm_class">
+<p>
+<h3>snake.class</h3>
+<p><img src="snake_class.png" alt="snake_class">
+</p>
