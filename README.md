@@ -98,7 +98,8 @@ Pläne für die Zukunft
 <p><img src="starfish_class.png" alt="starfish_class">
 </p>
 <h3>worm.class</h3>
-<p><img src="worm_class.png" alt="worm_class">
+<p><img src="worm_class1.png" alt="worm_class">
+<img src="worm_class2.png" alt="worm_class">
 <p>
 <h3>snake.class</h3>
 <p><img src="snake_class.png" alt="snake_class">
