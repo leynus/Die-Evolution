@@ -104,3 +104,9 @@ Pläne für die Zukunft
 <h3>snake.class</h3>
 <p><img src="snake_class_cut1.png" alt="snake_class">
 </p>
+<h3>crab2.class</h3>
+<p><img src="crab2_class_cut1.png" alt="crab2_class">
+</p>
+<h3>gameover.class</h3>
+<p><img src="gameover_class_cut1.png" alt="gameover_class">
+</p>
