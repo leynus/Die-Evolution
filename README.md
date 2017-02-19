@@ -92,15 +92,15 @@ Pläne für die Zukunft
 <p><img src="crab_class_cut1.png" alt="crab_class">
 </p>
 <h3>lobster.class</h3>
-<p><img src="lobster_class.png" alt="lobster_class">
+<p><img src="lobster_class_cut1.png" alt="lobster_class">
 </p>
 <h3>starfish.class</h3>
-<p><img src="starfish_class.png" alt="starfish_class">
+<p><img src="starfish_class_cut1.png" alt="starfish_class">
 </p>
 <h3>worm.class</h3>
-<p><img src="worm1_class.png" alt="worm_class">
-<img src="worm2_class.png" alt="worm_class">
+<p><img src="worm1_class_cut1.png" alt="worm_class">
+<img src="worm2_class_cut1.png" alt="worm_class">
 <p>
 <h3>snake.class</h3>
-<p><img src="snake_class.png" alt="snake_class">
+<p><img src="snake_class_cut1.png" alt="snake_class">
 </p>
