@@ -42,13 +42,13 @@ Ablauf der Programmierung
 <h3 style="color:darkturquoise;" id="era">
 Erste Actor
 </h3>
-<p>Als Grundlage verwenden wir die "Crab-World" Vorlage. Wir haben damit angefangen, dass wir eine einfache Crab.class in die World eingefügt haben. Durch den Befehl "move (5)" bewegt sich diese Crab.class geradeaus. Da die World begrenzt ist, veränderten wir die Bewegungsrichtung beim Auftreffen auf die Wand (Äußeres Ende der Welt). Die Richtung sollte nicht konkret vorgegeben sein, sondern immer zufällig sein. Mit dem Befehl "if (isAtEdge()) { turn(Greenfoot.getRandomNumber(90) - 45); }" konnten wir dies umsetzen. Wir haben mehrere Objekte der Crab.class in die World hinzugefügt. Außerdem haben wir die starfish.class und die lobster.class mit gleichen Eigenschaften wie die Crab.class eingefügt.
+<p>Als Grundlage verwenden wir die "Crab-World" Vorlage. Wir haben damit angefangen, dass wir eine einfache Crab.class in die World eingefügt haben. Durch den Befehl "move (5)" bewegt sich diese <a href="#cr1">Crab.class</a> geradeaus. Da die World begrenzt ist, veränderten wir die Bewegungsrichtung beim Auftreffen auf die Wand (Äußeres Ende der Welt). Die Richtung sollte nicht konkret vorgegeben sein, sondern immer zufällig sein. Mit dem Befehl "if (isAtEdge()) { turn(Greenfoot.getRandomNumber(90) - 45); }" konnten wir dies umsetzen. Wir haben mehrere Objekte der <a href="#cr1">Crab.class</a> in die World hinzugefügt. Außerdem haben wir die starfish.class und die lobster.class mit gleichen Eigenschaften wie die <a href="#cr1">Crab.class</a> eingefügt.
 <img src="crab.png" alt="crab" style="width:80px;height:49px;border:0;">
 </p>
 <h3 style="color:darkturquoise;" id="nah">
 Nahrungskette
 </h3>
-<p>Unser vorläufiges Ziel war es nun, eine Art Evolutionssimulation zu erstellen. Die drei verschiedenen Klassen sollten je eine Klasse haben, die sie fressen (aus der Welt entfernen) und von einer Klasse gefressen werden (aus der Welt entfernt werden). Wenn die Crab.class die starfish.class berührt, entfernt sie diese aus der World.</p>
+<p>Unser vorläufiges Ziel war es nun, eine Art Evolutionssimulation zu erstellen. Die drei verschiedenen Klassen sollten je eine Klasse haben, die sie fressen (aus der Welt entfernen) und von einer Klasse gefressen werden (aus der Welt entfernt werden). Wenn die <a href="#cr1">Crab.class</a> die <a href="#sta">starfish.class</a> berührt, entfernt sie diese aus der World.</p>
 <h3 style="color:darkturquoise;" id="zas">
 Zuschauer als Spieler
 </h3>
@@ -88,7 +88,7 @@ Pläne für die Zukunft
 </h2>
 <p>Wie schon vorher gesagt, ist dieses Programm dazu da, sich in Greenfoot herein zu arbeiten. Unser finales Ziel ist immernoch ein Doppelkopfspiel zu entwickeln. Wann genau wir damit beginnen, ist jedoch noch unklar.</p>
 <h2>Classes</h2>
-<h3>Crab.class</h3>
+<h3 id="cr1">Crab.class</h3>
 <p><img src="crab_class_cut1.png" alt="crab_class">
 </p>
 <h3>lobster.class</h3>
