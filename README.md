@@ -52,7 +52,7 @@ Nahrungskette
 <h3 style="color:darkturquoise;" id="zas">
 Zuschauer als Spieler
 </h3>
-<p>Als nächstes haben wir eine worm.class in das Spiel eingefügt, welche vom Spieler gesteuert werden soll. Mit Befehlen, wie zum Beispiel "{ if (Greenfoot.isKeyDown("left")) { turn(-4); }" haben wir die Pfeiltasten belegt. Die obere und untere lässt den Wurm sich vorwärts und rückwärts bewegen. Die rechte und linke Teste lässt den Wurm sich nach rechts oder links drehen. Der Wurm bekam die Eigenschaft, alle anderen Tiere zu fressen. Um das ganze Spiel etwas zufälliger zu machen, stellten wir in der World ein, dass jedes Objekt an einer zufälligen Stelle in der World erscheint.</p>
+<p>Als nächstes haben wir eine <a href="#wor">worm.class</a> in das Spiel eingefügt, welche vom Spieler gesteuert werden soll. Mit Befehlen, wie zum Beispiel "{ if (Greenfoot.isKeyDown("left")) { turn(-4); }" haben wir die Pfeiltasten belegt. Die obere und untere lässt den Wurm sich vorwärts und rückwärts bewegen. Die rechte und linke Teste lässt den Wurm sich nach rechts oder links drehen. Der Wurm bekam die Eigenschaft, alle anderen Tiere zu fressen. Um das ganze Spiel etwas zufälliger zu machen, stellten wir in der World ein, dass jedes Objekt an einer zufälligen Stelle in der World erscheint.</p>
 <h3 style="color:darkturquoise;" id="mus">
 Musik
 </h3>
@@ -60,7 +60,7 @@ Musik
 <h3 style="color:darkturquoise;" id="for">
 Fortpflanzung
 </h3>
-<p>Neue Objekte zu erzeugen stand weiterhin im Fokus unserer Anstrengungen. Wir versuchten eine Art Fortpflanzung einzuführen, indem wir immer ein neues Objekt in die World einfügten, wenn zwei gleiche Objekte aufeinandertrafen. Dies führte allerdings zu einem unkontrollierten, exponentiellen Wachstum (auch Crab-Bomb genannt). Wir haben dieses Problem gelöst, indem wir immer ein neues Objekt eingeführt haben, wenn ein Objekt ein anderes frisst (mit Ausnahme von der worm.class). Dazu gaben wir den Befehl an die World, dass immer wenn ein Objekt ein anderes entfernt, ein neuer Objekt mit der gleichen Klasse wie die des Entfernenden einzufügen. Dies haben wir mit folgendem Programmabschnitt gemacht: if (isTouching(starfish.class)) { World myworld; myworld = getWorld(); myworld.addObject( new Crab(), Greenfoot.getRandomNumber(600), Greenfoot.getRandomNumber(400)); removeTouching(starfish.class);</p>
+<p>Neue Objekte zu erzeugen stand weiterhin im Fokus unserer Anstrengungen. Wir versuchten eine Art Fortpflanzung einzuführen, indem wir immer ein neues Objekt in die World einfügten, wenn zwei gleiche Objekte aufeinandertrafen. Dies führte allerdings zu einem unkontrollierten, exponentiellen Wachstum (auch Crab-Bomb genannt). Wir haben dieses Problem gelöst, indem wir immer ein neues Objekt eingeführt haben, wenn ein Objekt ein anderes frisst (mit Ausnahme von der <a href="#wor">worm.class</a>). Dazu gaben wir den Befehl an die World, dass immer wenn ein Objekt ein anderes entfernt, ein neuer Objekt mit der gleichen Klasse wie die des Entfernenden einzufügen. Dies haben wir mit folgendem Programmabschnitt gemacht: if (isTouching(starfish.class)) { World myworld; myworld = getWorld(); myworld.addObject( new Crab(), Greenfoot.getRandomNumber(600), Greenfoot.getRandomNumber(400)); removeTouching(starfish.class);</p>
 <h3 style="color:darkturquoise;" id="evh">
 Einführung von Hunger
 </h3>
@@ -68,16 +68,16 @@ Einführung von Hunger
 <h3 style="color:darkturquoise;" id="sch">
 Die Schlange
 </h3>
-<p>Um unser Programm mehr mit einem Spiel und der damit verbundenen Leistung in Verbindung zu bringen, haben wir eine Verlust-Simulation eingeführt. Eine Schlange frisst den Wurm, wenn dieser einige Zeit lang keine Nahrung mehr zu sich genommen hat. Um dies zu erreichen, haben wir der worm.class befohlen, dass sie sich nur bewegen kann, wenn ihre Hungervariable ("tageSeitMahlzeit") unter dem Wert 300 liegt. Wenn dieser Wert erreicht ist, kann sie sich nur noch drehen und sie gibt ein Signal an die World, welche daraufhin eine Snake.class auf die Position X=0 und der selben Position Y, wie die der worm.class eingeführt. Diese haben wir durch eine Variable bestimmt, welche die Y-Koordinate beim Erreichen des Hungerlevels (tageSeitMahlzeit=300) misst. private int tageSeitMahlzeit; private int Todesort if (Greenfoot.isKeyDown("up") && tageSeitMahlzeit größer 300) { move(5); } if (tageSeitMahlzeit == 300) { Todesort = getY(); getWorld().addObject( new Snake(), 0, Todesort); } } } Die Schlange bewegt sich parallel zur X-Achse auf den Wurm zu, frißt diesen und bewegt sich in der gleichen Richtung zurück, in der sie hergekommen ist. </p>
+<p>Um unser Programm mehr mit einem Spiel und der damit verbundenen Leistung in Verbindung zu bringen, haben wir eine Verlust-Simulation eingeführt. Eine Schlange frisst den Wurm, wenn dieser einige Zeit lang keine Nahrung mehr zu sich genommen hat. Um dies zu erreichen, haben wir der <a href="#wor">worm.class</a> befohlen, dass sie sich nur bewegen kann, wenn ihre Hungervariable ("tageSeitMahlzeit") unter dem Wert 300 liegt. Wenn dieser Wert erreicht ist, kann sie sich nur noch drehen und sie gibt ein Signal an die World, welche daraufhin eine <a href="#sna">Snake.class</a> auf die Position X=0 und der selben Position Y, wie die der worm.class eingeführt. Diese haben wir durch eine Variable bestimmt, welche die Y-Koordinate beim Erreichen des Hungerlevels (tageSeitMahlzeit=300) misst. private int tageSeitMahlzeit; private int Todesort if (Greenfoot.isKeyDown("up") && tageSeitMahlzeit größer 300) { move(5); } if (tageSeitMahlzeit == 300) { Todesort = getY(); getWorld().addObject( new Snake(), 0, Todesort); } } } Die Schlange bewegt sich parallel zur X-Achse auf den Wurm zu, frißt diesen und bewegt sich in der gleichen Richtung zurück, in der sie hergekommen ist. </p>
 <img src="snake.png" alt="snake">
 <h3 style="color:darkturquoise;" id="zom">
 Zombiekrabben
 </h3>
-<p>In einer weiteren Programmergänzung behandelten wir das Problem, was mit toten Objekten passiert. Als weitere Spielherausforderung erschufen wir "Zombiekrabben". Crab-Objekte die von der Worm.class gefressen wurden sollten nach einer gewissen Zeit "wiederauferstehen". Dies haben wir mit dem Zusammenspiel von mehreren Variablen und if-Schleifen gemacht. Wenn der Wurm eine Krabbe frisst, wird durch zwei Variablen ("TodesortCrabX" und "TodesortCrabY") festgehalten. Außerdem wird die Variable "Zombiecrab" um 1 erhöht. Wenn diese Variable größer als 0 ist, beginnt eine zweite Variable ("ToteCrab") hochzuzählen. Wenn diese bei dem Wert 200 angelangt ist, wird der World ein Befehl gegeben, eine Crab2.class an dem vorher bestimmten Todesort einzufügen. Die Variable "Zombiecrab" wird um 1 subtrahiert und "ToteCrab" wird auf 0 zurückgesetzt. private int Zombiecrab; private int TodesortCrabX; private int TodesortCrabY; private int ToteCrab removeTouching(Crab.class); Zombiecrab = Zombiecrab + 1; TodesortCrabX = getX(); TodesortCrabY = getY(); } if (Zombiecrab > 0) { ToteCrab = ToteCrab + 1; } if (ToteCrab == 200) { getWorld().addObject( new Crab2(), TodesortCrabX, TodesortCrabY); Zombiecrab = Zombiecrab - 1; ToteCrab = 0; } Gäbe es nur ein Objekt der Crab.class, hätte man auch mit einer booleanschen Variable arbeiten könne (True, wenn die worm.class die Crab.class berührt hätte). Da es aber mehrere Krabben gibt, haben wir dieses Problem wie oben beschrieben gelöst. Die Crab2.class ist doppelt so schnell, wie die Crab.class. Wenn die Crab2.class auf die lobster.class oder die starfish.class trifft, werden beide Objekte aus der World entfernt.</p>
+<p>In einer weiteren Programmergänzung behandelten wir das Problem, was mit toten Objekten passiert. Als weitere Spielherausforderung erschufen wir "Zombiekrabben". Crab-Objekte die von der <a href="#wor">Worm.class</a> gefressen wurden sollten nach einer gewissen Zeit "wiederauferstehen". Dies haben wir mit dem Zusammenspiel von mehreren Variablen und if-Schleifen gemacht. Wenn der Wurm eine Krabbe frisst, wird durch zwei Variablen ("TodesortCrabX" und "TodesortCrabY") festgehalten. Außerdem wird die Variable "Zombiecrab" um 1 erhöht. Wenn diese Variable größer als 0 ist, beginnt eine zweite Variable ("ToteCrab") hochzuzählen. Wenn diese bei dem Wert 200 angelangt ist, wird der World ein Befehl gegeben, eine <a href="#cr2">Crab2.class</a> an dem vorher bestimmten Todesort einzufügen. Die Variable "Zombiecrab" wird um 1 subtrahiert und "ToteCrab" wird auf 0 zurückgesetzt. private int Zombiecrab; private int TodesortCrabX; private int TodesortCrabY; private int ToteCrab removeTouching(Crab.class); Zombiecrab = Zombiecrab + 1; TodesortCrabX = getX(); TodesortCrabY = getY(); } if (Zombiecrab > 0) { ToteCrab = ToteCrab + 1; } if (ToteCrab == 200) { getWorld().addObject( new Crab2(), TodesortCrabX, TodesortCrabY); Zombiecrab = Zombiecrab - 1; ToteCrab = 0; } Gäbe es nur ein Objekt der <a href="#cr1">Crab.class</a>, hätte man auch mit einer booleanschen Variable arbeiten könne (True, wenn die <a href="#wor">worm.class</a> die <a href="#cr1">Crab.class</a> berührt hätte). Da es aber mehrere Krabben gibt, haben wir dieses Problem wie oben beschrieben gelöst. Die Crab2.class ist doppelt so schnell, wie die <a href="#cr1">Crab.class</a>. Wenn die <a href="#cr2">Crab2.class</a> auf die lobster.class oder die <a href="#sta">starfish.class</a> trifft, werden beide Objekte aus der World entfernt.</p>
 <h3 style="color:darkturquoise;" id="gao">
 Game Over
 </h3>
-<p>Zum Schluss haben wir ein "Game Over" Schriftzug in der World entstehen lassen. Die Grafik dazu haben wir selbst erstellt. Dieser tritt in der Mitte des Spielfeldes auf, wenn die Schlange das linke Ende der Karte erreicht hab.</p>
+<p>Zum Schluss haben wir ein "Game Over" Schriftzug in der World entstehen lassen. Die Grafik dazu haben wir selbst erstellt. Diese <a href="#gam">gameover.class</a> tritt in der Mitte des Spielfeldes auf, wenn die Schlange das linke Ende der Karte erreicht hab.</p>
 <img src="game_over.png" alt="game_over">
 <h3 style="color:darkturquoise;" id="sco">
 Der Score
@@ -91,22 +91,22 @@ Pläne für die Zukunft
 <h3 id="cr1">Crab.class</h3>
 <p><img src="crab_class_cut1.png" alt="crab_class">
 </p>
-<h3>lobster.class</h3>
+<h3 id="lob">lobster.class</h3>
 <p><img src="lobster_class_cut1.png" alt="lobster_class">
 </p>
-<h3>starfish.class</h3>
+<h3 id="sta">starfish.class</h3>
 <p><img src="starfish_class_cut1.png" alt="starfish_class">
 </p>
-<h3>worm.class</h3>
+<h3 id="wor">worm.class</h3>
 <p><img src="worm1_class_cut1.png" alt="worm_class">
 <img src="worm2_class_cut1.png" alt="worm_class">
 <p>
-<h3>snake.class</h3>
+<h3 id="sna">snake.class</h3>
 <p><img src="snake_class_cut1.png" alt="snake_class">
 </p>
-<h3>crab2.class</h3>
+<h3 id="cr2">crab2.class</h3>
 <p><img src="crab2_class_cut1.png" alt="crab2_class">
 </p>
-<h3>gameover.class</h3>
+<h3 id="gam">gameover.class</h3>
 <p><img src="gameover_class_cut1.png" alt="gameover_class">
 </p>
