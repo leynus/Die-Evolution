@@ -123,25 +123,25 @@ Trifft eine <a href="#cr1">crab.class</a> auf einen Actor der <a href="#sta">sta
 Wenn die Variable "TageSeitMahlzeit" den Wert 300 erreicht, wird der World der Befehl gegeben, diesen Actor zu entfernen.
 </p>
 <h3 id="lob">lobster.class<img src="lobster.png" alt="lobster"></h3>
-<p><img src="lobster_class_cut1.png" alt="lobster_class">
-Wenn der Actor auf eine <a href="#cr2">crab2.class</a> trifft, wird diese entfernt. Außerdem wird der World mitgeteilt dieses Objekt der <a href="#lob">lobster.class</a> zu entfernen.<br>
+<p><img src="lobster_class_cut1.png" alt="lobster_class"></p>
+<p>Wenn der Actor auf eine <a href="#cr2">crab2.class</a> trifft, wird diese entfernt. Außerdem wird der World mitgeteilt dieses Objekt der <a href="#lob">lobster.class</a> zu entfernen.<br>
 Der restliche Quelltext ähnelt dem der <a href="#cr1">crab.class</a> stark.
 </p>
 <h3 id="sta">starfish.class<img src="starfish.png" alt="starfish"></h3>
-<p><img src="starfish_class_cut1.png" alt="starfish_class">
-Siehe <a href="#cr1">crab.class</a>, <a href="#lob">lobster.class</a>
+<p><img src="starfish_class_cut1.png" alt="starfish_class"></p>
+<p>Siehe <a href="#cr1">crab.class</a>, <a href="#lob">lobster.class</a>
 </p>
 <h3 id="wor">worm.class<img src="worm.png" alt="worm"></h3>
-<p><img src="worm1_class_cut1.png" alt="worm_class">
-Wird die linke oder rechte Pfeiltaste gedrückt, dreht der Actor sich in die dementsprechende Richtung.<br>
+<p><img src="worm1_class_cut1.png" alt="worm_class"></p>
+<p>Wird die linke oder rechte Pfeiltaste gedrückt, dreht der Actor sich in die dementsprechende Richtung.<br>
 Pro Schleife zählt die Variable "TageSeitMahlzeit" einen hoch.<br>
-Wenn die Pfeiltaste nach oben bzw. nach unten gedrückt wird und der Wert der Variable "TageSeitMahlzeit" unter 300 liegt, bewegt sich das Objekt nach vorne bzw. nach hinten.<br>
+Wenn die Pfeiltaste nach oben bzw. nach unten gedrückt wird und der Wert der Variable "TageSeitMahlzeit" unter 300 liegt, bewegt sich das Objekt nach vorne bzw. nach hinten.<br></p>
 <img src="worm2_class_cut1.png" alt="worm_class">
 Wenn der Actor ein Objekt der <a href="#sta">starfish.class</a>, <a href="#lob">lobster.class</a>, <a href="#cr2">crab2.class</a> wird die Variable "TageSeitMahlzeit" gleich Null gesetzt, das Objekt wird entfernt und die Variable "eaten" zählt einen nach oben. Wenn es sich um eine <a href="#cr1">crab.class</a> handelt, werden zusätzlich noch durch die Variablen "TodesortCrabX" und "TodesortCrabY" die aktuellen Koordinaten bestimmt und zu der Variable "Zombiecrab" wird 1 addiert.<br>
 Der World wird befehligt, den Wert der Variable "eaten" hinter "Number of eaten animals" am Punkt (150 / 50)<br>
 Ist die Variable "Zombiecrab" größer als Null, beginnt die Variable "ToteCrab" mit jeder Schleife +1 hochzuzählen.<br>
 Ist diese bei 200 angelangt, gibt sie der World den Befehl einen neuen Actor der <a href="#cr2">crab2.class</a> auf den Punkt mit den durch "TodesortCrabX" und "TodesortCrabY" Koordinaten einzufügen. Die Variable "Zombiecrab" wird mit 1 subtrahiert und die Variable "ToteCrab" wird gleich Null gesetzt.<br>
-<p>
+</p>
 <h3 id="sna">snake.class<img src="snake2.png" alt="snake2"></h3>
 <p><img src="snake_class_cut1.png" alt="snake_class">
 </p>
