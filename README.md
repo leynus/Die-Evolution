@@ -92,12 +92,28 @@ Game Over
 <h3 style="color:darkturquoise;" id="sco">
 Der Score
 </h3>
-<p> in Bearbeitung</p>
+<p>Um unser Programm mehr einem Spiel anzunähern, haben wir einen Score eingefügt. Dieser zählt die von der <a href="#wor">worm.class</a> entfernten Actor (Anzahl der Tiere, die der Wurm gefressen hat). Außerdem haben wir einen Zähler eingefügt, der mit jedem Durchlauf einen nach oben zählt.
+ Der Zähler „score“ zählt, die Durchläufe wie folgt:
+<mark>public static int score
+score = score + 1
+getWorld().showText („Your Score:“ + score, 100, 30)</mark>
+Der Wert des Zählers wird an der Stelle (100 / 30) hinter „Your Score:“ gezeigt.
+Wenn die <a href="#sna">snake.class</a> den Actor aus der World entfernt, hört der Zähler auf hochzuzählen.
+Der Zähler “eaten“ wird immer aktiviert, wenn eine if-Schleife durch das Berühren der <a href="#wor">worm.class</a> mit einem anderen Actor geöffnet wird. Sein Wert erscheint am Punkt (150 / 50) hinter „Number of eaten animals“.
+Er lautet wie folgt:
+<mark>public static int eaten
+if(isTouching(crab.class)) eaten = eaten + 1
+getWorld().showText („Number of eaten animals:“ + eaten, 150, 50)</mark>
+
+Damit wir mit verschiedenen Klassen Zugriff auf die Variablen haben, sind diese auf public gesetzt. So konnten wir der <a href="#gam">gameover.class</a> der World den Befehl geben, mit diesen Werten zu arbeiten.
+Um eine taktische Idee notwendig zu machen beim Spielen dieses Spiels haben wir diese beiden „Scores“ multipliziert zu einem Gesamtscore, der am Ende durch folgenden Code angezeigt wird:
+<mark>getWorld().showText („Final Score“ + Worm.eaten * Worm.score, 300, 250)</mark>
+Anregungen zu dieser Einführung gab uns folgendes <a href="https://youtu.be/ubsC4PR2WjI">Video</a> von dem Erfinder Greenfoot's.</p>
 <h2 style="color:lime;" id="pfz">
 Pläne für die Zukunft
 </h2>
 <p>In Zukunft stellen wir uns vor, unsere Kenntnisse aus Greenfoot und der html-Gestaltung zu Nutzen, um ein größeres und anspruchsvolleres Projekt in Angriff zu nehmen.</p>
-<h2>Classes</h2>
+<h2>Klassen</h2>
 <h3 id="cr1">crab.class<img src="crab.png" alt="crab"></h3>
 <p><img src="crab_class_cut1.png" alt="crab_class">
 </p>
