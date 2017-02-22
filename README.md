@@ -88,23 +88,23 @@ Pläne für die Zukunft
 </h2>
 <p>Wie schon vorher gesagt, ist dieses Programm dazu da, sich in Greenfoot herein zu arbeiten. Unser finales Ziel ist immernoch ein Doppelkopfspiel zu entwickeln. Wann genau wir damit beginnen, ist jedoch noch unklar.</p>
 <h2>Classes</h2>
-<h3 id="cr1">crab.class</h3>
+<h3 id="cr1">crab.class</h3><img src="crab.png" alt="crab">
 <p><img src="crab_class_cut1.png" alt="crab_class">
 </p>
-<h3 id="lob">lobster.class</h3>
+<h3 id="lob">lobster.class</h3><img src="lobster" alt="lobster">
 <p><img src="lobster_class_cut1.png" alt="lobster_class">
 </p>
-<h3 id="sta">starfish.class</h3>
+<h3 id="sta">starfish.class</h3><img src="starfish.png" alt="starfish">
 <p><img src="starfish_class_cut1.png" alt="starfish_class">
 </p>
-<h3 id="wor">worm.class</h3>
+<h3 id="wor">worm.class</h3><img src="worm.png" alt="worm">
 <p><img src="worm1_class_cut1.png" alt="worm_class">
 <img src="worm2_class_cut1.png" alt="worm_class">
 <p>
-<h3 id="sna">snake.class</h3>
+<h3 id="sna">snake.class</h3><img src="snake2" alt="snake2">
 <p><img src="snake_class_cut1.png" alt="snake_class">
 </p>
-<h3 id="cr2">crab2.class</h3>
+<h3 id="cr2">crab2.class</h3><img src="crab2.png" alt="crab2">
 <p><img src="crab2_class_cut1.png" alt="crab2_class">
 </p>
 <h3 id="gam">gameover.class</h3>
