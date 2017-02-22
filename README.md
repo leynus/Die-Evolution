@@ -3,6 +3,7 @@
 <i>ein Projekt von Leif Peters und Linus Reck</i>
 </p>
 <p>Das vorliegende Programm wurde mit Hilfe "<mark>Greenfoot's</mark>" geschrieben. Beim Bearbeiten orientierten wir uns an den Stride-Angaben und dem Greenfoot-Buch.</p>
+<p> Unser<a href="https://leynus.github.io/Stundenprotokoll/">Stundenprotokoll</a>
 <h2>Inhaltsverzeichnis</h2>
 <ul>
 <li><a href="#anf">Anfänge</a></li>
@@ -137,7 +138,7 @@ Der restliche Quelltext ähnelt dem der <a href="#cr1">crab.class</a> stark.
 Pro Schleife zählt die Variable "TageSeitMahlzeit" einen hoch.<br>
 Wenn die Pfeiltaste nach oben bzw. nach unten gedrückt wird und der Wert der Variable "TageSeitMahlzeit" unter 300 liegt, bewegt sich das Objekt nach vorne bzw. nach hinten.<br></p>
 <img src="worm2_class_cut1.png" alt="worm_class">
-Wenn der Actor ein Objekt der <a href="#sta">starfish.class</a>, <a href="#lob">lobster.class</a>, <a href="#cr2">crab2.class</a> wird die Variable "TageSeitMahlzeit" gleich Null gesetzt, das Objekt wird entfernt und die Variable "eaten" zählt einen nach oben. Wenn es sich um eine <a href="#cr1">crab.class</a> handelt, werden zusätzlich noch durch die Variablen "TodesortCrabX" und "TodesortCrabY" die aktuellen Koordinaten bestimmt und zu der Variable "Zombiecrab" wird 1 addiert.<br>
+<p>Wenn der Actor ein Objekt der <a href="#sta">starfish.class</a>, <a href="#lob">lobster.class</a>, <a href="#cr2">crab2.class</a> wird die Variable "TageSeitMahlzeit" gleich Null gesetzt, das Objekt wird entfernt und die Variable "eaten" zählt einen nach oben. Wenn es sich um eine <a href="#cr1">crab.class</a> handelt, werden zusätzlich noch durch die Variablen "TodesortCrabX" und "TodesortCrabY" die aktuellen Koordinaten bestimmt und zu der Variable "Zombiecrab" wird 1 addiert.<br>
 Der World wird befehligt, den Wert der Variable "eaten" hinter "Number of eaten animals" am Punkt (150 / 50)<br>
 Ist die Variable "Zombiecrab" größer als Null, beginnt die Variable "ToteCrab" mit jeder Schleife +1 hochzuzählen.<br>
 Ist diese bei 200 angelangt, gibt sie der World den Befehl einen neuen Actor der <a href="#cr2">crab2.class</a> auf den Punkt mit den durch "TodesortCrabX" und "TodesortCrabY" Koordinaten einzufügen. Die Variable "Zombiecrab" wird mit 1 subtrahiert und die Variable "ToteCrab" wird gleich Null gesetzt.<br>
@@ -152,4 +153,4 @@ Ist der Actor am Rand angelangt, wird der World befehligt, ein Objekt der <a hre
 <p> Siehe <a href="#cr2">crab.class</a></p>
 <h3 id="gam">gameover.class<img src="gameover.png" alt="gameover_class"></h3>
 <p><img src="gameover_class_cut1.png" alt="gameover_class"></p>
-Die Variablen "eaten" und "score" der <a href="#wor">worm.class</a> werden miteinander multipliziert und bei (300 / 250) als "Final Score:" angegeben.</p>
+<p>Die Variablen "eaten" und "score" der <a href="#wor">worm.class</a> werden miteinander multipliziert und bei (300 / 250) als "Final Score:" angegeben.</p>
