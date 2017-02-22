@@ -92,21 +92,21 @@ Game Over
 <h3 style="color:darkturquoise;" id="sco">
 Der Score
 </h3>
-<p>Um unser Programm mehr einem Spiel anzunähern, haben wir einen Score eingefügt. Dieser zählt die von der <a href="#wor">worm.class</a> entfernten Actor (Anzahl der Tiere, die der Wurm gefressen hat). Außerdem haben wir einen Zähler eingefügt, der mit jedem Durchlauf einen nach oben zählt.
- Der Zähler „score“ zählt, die Durchläufe wie folgt:
-<mark>public static int score
-score = score + 1
-getWorld().showText („Your Score:“ + score, 100, 30)</mark>
+<p>Um unser Programm mehr einem Spiel anzunähern, haben wir einen Score eingefügt. Dieser zählt die von der <a href="#wor">worm.class</a> entfernten Actor (Anzahl der Tiere, die der Wurm gefressen hat). Außerdem haben wir einen Zähler eingefügt, der mit jedem Durchlauf einen nach oben zählt.<br>
+ Der Zähler „score“ zählt, die Durchläufe wie folgt:<br>
+<mark>public static int score<br>
+score = score + 1<br>
+getWorld().showText („Your Score:“ + score, 100, 30)</mark><br>
 Der Wert des Zählers wird an der Stelle (100 / 30) hinter „Your Score:“ gezeigt.
-Wenn die <a href="#sna">snake.class</a> den Actor aus der World entfernt, hört der Zähler auf hochzuzählen.
-Der Zähler “eaten“ wird immer aktiviert, wenn eine if-Schleife durch das Berühren der <a href="#wor">worm.class</a> mit einem anderen Actor geöffnet wird. Sein Wert erscheint am Punkt (150 / 50) hinter „Number of eaten animals“.
-Er lautet wie folgt:
-<mark>public static int eaten
-if(isTouching(crab.class)) eaten = eaten + 1
-getWorld().showText („Number of eaten animals:“ + eaten, 150, 50)</mark>
+Wenn die <a href="#sna">snake.class</a> den Actor aus der World entfernt, hört der Zähler auf hochzuzählen.<br>
+Der Zähler “eaten“ wird immer aktiviert, wenn eine if-Schleife durch das Berühren der <a href="#wor">worm.class</a> mit einem anderen Actor geöffnet wird. Sein Wert erscheint am Punkt (150 / 50) hinter „Number of eaten animals“.<br>
+Er lautet wie folgt:<br>
+<mark>public static int eaten<br>
+if(isTouching(crab.class)) eaten = eaten + 1<br>
+getWorld().showText („Number of eaten animals:“ + eaten, 150, 50)</mark><br>
 
 Damit wir mit verschiedenen Klassen Zugriff auf die Variablen haben, sind diese auf public gesetzt. So konnten wir der <a href="#gam">gameover.class</a> der World den Befehl geben, mit diesen Werten zu arbeiten.
-Um eine taktische Idee notwendig zu machen beim Spielen dieses Spiels haben wir diese beiden „Scores“ multipliziert zu einem Gesamtscore, der am Ende durch folgenden Code angezeigt wird:
+Um eine taktische Idee notwendig zu machen beim Spielen dieses Spiels haben wir diese beiden „Scores“ multipliziert zu einem Gesamtscore, der am Ende durch folgenden Code angezeigt wird:<br>
 <mark>getWorld().showText („Final Score“ + Worm.eaten * Worm.score, 300, 250)</mark>
 Anregungen zu dieser Einführung gab uns folgendes <a href="https://youtu.be/ubsC4PR2WjI">Video</a> von dem Erfinder Greenfoot's.</p>
 <h2 style="color:lime;" id="pfz">
@@ -141,13 +141,15 @@ Wenn der Actor ein Objekt der <a href="#sta">starfish.class</a>, <a href="#lob">
 Der World wird befehligt, den Wert der Variable "eaten" hinter "Number of eaten animals" am Punkt (150 / 50)<br>
 Ist die Variable "Zombiecrab" größer als Null, beginnt die Variable "ToteCrab" mit jeder Schleife +1 hochzuzählen.<br>
 Ist diese bei 200 angelangt, gibt sie der World den Befehl einen neuen Actor der <a href="#cr2">crab2.class</a> auf den Punkt mit den durch "TodesortCrabX" und "TodesortCrabY" Koordinaten einzufügen. Die Variable "Zombiecrab" wird mit 1 subtrahiert und die Variable "ToteCrab" wird gleich Null gesetzt.<br>
-</p>
+Ist der Wert der Variable "tageSeitMahlzeit" bei 300 angelangt, wird der Y-Wert des Actors mit der Variable "Todesort" bestimmt. Dieser kann sich nur noch drehen. Der World wird befiehlt, einen Actor der <a href="#sna">snake.class</a> an den Punkt (0 / "Todesort").<br>
+Die Variable "score" zählt mit jeder Schleife +1. Die World zeigt ihren Wert hinter "Your Score:" am Punkt (100 / 30).</p>
 <h3 id="sna">snake.class<img src="snake2.png" alt="snake2"></h3>
-<p><img src="snake_class_cut1.png" alt="snake_class">
-</p>
+<p><img src="snake_class_cut1.png" alt="snake_class"></p>
+<p>Der Actor bewegt sich in X-Richtung, entfernt bei Berührung den Actor der <a href="#wor">worm.class</a>, dreht sich um 180° bewegt sich vorwärts zurück an den Rand der World.<br>
+Ist der Actor am Rand angelangt, wird der World befehligt, ein Objekt der <a href="#gam">gameover.class</a> am Punkt (300 / 200) einzufügen.</p>
 <h3 id="cr2">crab2.class<img src="crab2.png" alt="crab2"></h3>
-<p><img src="crab2_class_cut1.png" alt="crab2_class">
-</p>
+<p><img src="crab2_class_cut1.png" alt="crab2_class"></p>
+<p> Siehe <a href="#cr2">crab.class</a></p>
 <h3 id="gam">gameover.class<img src="gameover.png" alt="gameover_class"></h3>
-<p><img src="gameover_class_cut1.png" alt="gameover_class">
-</p>
+<p><img src="gameover_class_cut1.png" alt="gameover_class"></p>
+Die Variablen "eaten" und "score" der <a href="#wor">worm.class</a> werden miteinander multipliziert und bei (300 / 250) als "Final Score:" angegeben.</p>
