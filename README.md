@@ -3,7 +3,7 @@
 <i>ein Projekt von Leif Peters und Linus Reck</i>
 </p>
 <p>Das vorliegende Programm wurde mit Hilfe "<mark>Greenfoot's</mark>" geschrieben. Beim Bearbeiten orientierten wir uns an den Stride-Angaben und dem Greenfoot-Buch.</p>
-<p> Unser<a href="https://leynus.github.io/Stundenprotokoll/">Stundenprotokoll</a>
+<p> Unser <a href="https://leynus.github.io/Stundenprotokoll/">Stundenprotokoll</a>
 <h2>Inhaltsverzeichnis</h2>
 <ul>
 <li><a href="#anf">Anfänge</a></li>
