@@ -133,7 +133,7 @@ Der restliche Quelltext ähnelt dem der <a href="#cr1">crab.class</a> stark.
 <p>Wird die linke oder rechte Pfeiltaste gedrückt, dreht der Actor sich in die dementsprechende Richtung.<br>
 Pro Schleife zählt die Variable "TageSeitMahlzeit" einen hoch.<br>
 Wenn die Pfeiltaste nach oben bzw. nach unten gedrückt wird und der Wert der Variable "TageSeitMahlzeit" unter 300 liegt, bewegt sich das Objekt nach vorne bzw. nach hinten.<br></p>
-<img style="color:orchid;"src="worm2_class_cut1.png" alt="worm_class">
+<img src="worm2_class_cut1.png" alt="worm_class">
 <p>Wenn der Actor ein Objekt der <a href="#sta">starfish.class</a>, <a href="#lob">lobster.class</a>, <a href="#cr2">crab2.class</a> wird die Variable "TageSeitMahlzeit" gleich Null gesetzt, das Objekt wird entfernt und die Variable "eaten" zählt einen nach oben. Wenn es sich um eine <a href="#cr1">crab.class</a> handelt, werden zusätzlich noch durch die Variablen "TodesortCrabX" und "TodesortCrabY" die aktuellen Koordinaten bestimmt und zu der Variable "Zombiecrab" wird 1 addiert.<br>
 Der World wird befehligt, den Wert der Variable "eaten" hinter "Number of eaten animals" am Punkt (150 / 50)<br>
 Ist die Variable "Zombiecrab" größer als Null, beginnt die Variable "ToteCrab" mit jeder Schleife +1 hochzuzählen.<br>
