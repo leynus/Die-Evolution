@@ -22,6 +22,16 @@
 <li><a href="#sco">Der Score</a></li>
 </ul>
 <li><a href="#pfz">PLäne für die Zukunft</a></li>
+<li><a href="#kla">Klassen</a></li>
+<ul>
+<li><a href="#cr1">crab.class</a></li>
+<li><a href="#lob">lobster.class</a></li>
+<li><a href="#sta">starfish.class</a></li>
+<li><a href="#wor">worm.class</a></li>
+<li><a href="#sna">snake.class</a></li>
+<li><a href="#cr2">crab2.class</a></li>
+<li><a href="#gam">gameover.class</a></li>
+</ul>
 </ul>
 <h2 style="color:green;" id="anf">
 Anfänge
@@ -88,23 +98,23 @@ Pläne für die Zukunft
 </h2>
 <p>Wie schon vorher gesagt, ist dieses Programm dazu da, sich in Greenfoot herein zu arbeiten. Unser finales Ziel ist immernoch ein Doppelkopfspiel zu entwickeln. Wann genau wir damit beginnen, ist jedoch noch unklar.</p>
 <h2>Classes</h2>
-<h3 id="cr1">crab.class</h3><img src="crab.png" alt="crab">
+<h3 id="cr1">crab.class<img src="crab.png" alt="crab"></h3>
 <p><img src="crab_class_cut1.png" alt="crab_class">
 </p>
-<h3 id="lob">lobster.class</h3><img src="lobster.png" alt="lobster">
+<h3 id="lob">lobster.class<img src="lobster.png" alt="lobster"></h3>
 <p><img src="lobster_class_cut1.png" alt="lobster_class">
 </p>
-<h3 id="sta">starfish.class</h3><img src="starfish.png" alt="starfish">
+<h3 id="sta">starfish.class<img src="starfish.png" alt="starfish"></h3>
 <p><img src="starfish_class_cut1.png" alt="starfish_class">
 </p>
-<h3 id="wor">worm.class</h3><img src="worm.png" alt="worm">
+<h3 id="wor">worm.class<img src="worm.png" alt="worm"></h3>
 <p><img src="worm1_class_cut1.png" alt="worm_class">
 <img src="worm2_class_cut1.png" alt="worm_class">
 <p>
-<h3 id="sna">snake.class</h3><img src="snake2.png" alt="snake2">
+<h3 id="sna">snake.class<img src="snake2.png" alt="snake2"></h3>
 <p><img src="snake_class_cut1.png" alt="snake_class">
 </p>
-<h3 id="cr2">crab2.class</h3><img src="crab2.png" alt="crab2">
+<h3 id="cr2">crab2.class<img src="crab2.png" alt="crab2"></h3>
 <p><img src="crab2_class_cut1.png" alt="crab2_class">
 </p>
 <h3 id="gam">gameover.class<img src="gameover.png" alt="gameover_class"></h3>
