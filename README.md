@@ -110,7 +110,7 @@ Damit wir mit verschiedenen Klassen Zugriff auf die Variablen haben, sind diese 
 Um eine taktische Idee notwendig zu machen beim Spielen dieses Spiels haben wir diese beiden „Scores“ multipliziert zu einem Gesamtscore, der am Ende durch folgenden Code angezeigt wird:<br>
 <mark>getWorld().showText („Final Score“ + Worm.eaten * Worm.score, 300, 250)</mark>
 Anregungen zu dieser Einführung gab uns folgendes <a href="https://youtu.be/ubsC4PR2WjI">Video</a> von dem Erfinder Greenfoot's.</p>
-<h2  style="color:midnightblue;"id="kla">Klassen</h2>
+<h2 id="kla" style="color:midnightblue;">Klassen</h2>
 <h3 id="cr1">crab.class<img src="crab.png" alt="crab"></h3>
 <p><img src="crab_class_cut1.png" alt="crab_class">
 Der Actor bewegt sich fünf Längeneinheiten pro Schleife vorwärts.<br>
