@@ -111,7 +111,7 @@ Um eine taktische Idee notwendig zu machen beim Spielen dieses Spiels haben wir 
 <mark>getWorld().showText („Final Score“ + Worm.eaten * Worm.score, 300, 250)</mark>
 Anregungen zu dieser Einführung gab uns folgendes <a href="https://youtu.be/ubsC4PR2WjI">Video</a> von dem Erfinder Greenfoot's.</p>
 <h2 id="kla" style="color:midnightblue;">Klassen</h2>
-<h3 id="cr1">crab.class<img src="crab.png" alt="crab"></h3>
+<h3 style="color:orchid;" id="cr1">crab.class<img src="crab.png" alt="crab"></h3>
 <p><img src="crab_class_cut1.png" alt="crab_class">
 Der Actor bewegt sich fünf Längeneinheiten pro Schleife vorwärts.<br>
 Mit jeder Schleife zählt die Variable "TageSeitMahlzeit" einen hoch.<br>
@@ -119,16 +119,16 @@ Wenn das Objekt an den Rand der World trifft, dreht es sich mit einem zufällige
 Trifft eine <a href="#cr1">crab.class</a> auf einen Actor der <a href="#sta">starfish.class</a>, wird der World befiehlt, einen neues Objekt der <a href="#cr1">crab.class</a> an einer zufälligen Stelle zu erzeugen. Außerdem wird dieser Actor der <a href="#sta">starfish.class</a> aus der World entfernt. Die Variable "TageSeitMahlzeit" wird zurück auf 0 gesetzt.<br>
 Wenn die Variable "TageSeitMahlzeit" den Wert 300 erreicht, wird der World der Befehl gegeben, diesen Actor zu entfernen.
 </p>
-<h3  style="color:orchid;"id="lob">lobster.class<img src="lobster.png" alt="lobster"></h3>
+<h3  style="color:orchid;" id="lob">lobster.class<img src="lobster.png" alt="lobster"></h3>
 <p><img src="lobster_class_cut1.png" alt="lobster_class"></p>
 <p>Wenn der Actor auf eine <a href="#cr2">crab2.class</a> trifft, wird diese entfernt. Außerdem wird der World mitgeteilt dieses Objekt der <a href="#lob">lobster.class</a> zu entfernen.<br>
 Der restliche Quelltext ähnelt dem der <a href="#cr1">crab.class</a> stark.
 </p>
-<h3 style="color:orchid;"id="sta">starfish.class<img src="starfish.png" alt="starfish"></h3>
+<h3 style="color:orchid;" id="sta">starfish.class<img src="starfish.png" alt="starfish"></h3>
 <p><img src="starfish_class_cut1.png" alt="starfish_class"></p>
 <p>Siehe <a href="#cr1">crab.class</a>, <a href="#lob">lobster.class</a>
 </p>
-<h3 style="color:orchid;"id="wor">worm.class<img src="worm.png" alt="worm"></h3>
+<h3 style="color:orchid;" id="wor">worm.class<img src="worm.png" alt="worm"></h3>
 <p><img src="worm1_class_cut1.png" alt="worm_class"></p>
 <p>Wird die linke oder rechte Pfeiltaste gedrückt, dreht der Actor sich in die dementsprechende Richtung.<br>
 Pro Schleife zählt die Variable "TageSeitMahlzeit" einen hoch.<br>
@@ -140,14 +140,14 @@ Ist die Variable "Zombiecrab" größer als Null, beginnt die Variable "ToteCrab"
 Ist diese bei 200 angelangt, gibt sie der World den Befehl einen neuen Actor der <a href="#cr2">crab2.class</a> auf den Punkt mit den durch "TodesortCrabX" und "TodesortCrabY" Koordinaten einzufügen. Die Variable "Zombiecrab" wird mit 1 subtrahiert und die Variable "ToteCrab" wird gleich Null gesetzt.<br>
 Ist der Wert der Variable "tageSeitMahlzeit" bei 300 angelangt, wird der Y-Wert des Actors mit der Variable "Todesort" bestimmt. Dieser kann sich nur noch drehen. Der World wird befiehlt, einen Actor der <a href="#sna">snake.class</a> an den Punkt (0 / "Todesort").<br>
 Die Variable "score" zählt mit jeder Schleife +1. Die World zeigt ihren Wert hinter "Your Score:" am Punkt (100 / 30).</p>
-<h3 style="color:orchid;"id="sna">snake.class<img src="snake2.png" alt="snake2"></h3>
+<h3 style="color:orchid;" id="sna">snake.class<img src="snake2.png" alt="snake2"></h3>
 <p><img src="snake_class_cut1.png" alt="snake_class"></p>
 <p>Der Actor bewegt sich in X-Richtung, entfernt bei Berührung den Actor der <a href="#wor">worm.class</a>, dreht sich um 180° bewegt sich vorwärts zurück an den Rand der World.<br>
 Ist der Actor am Rand angelangt, wird der World befehligt, ein Objekt der <a href="#gam">gameover.class</a> am Punkt (300 / 200) einzufügen.</p>
-<h3 style="color:orchid;"id="cr2">crab2.class<img src="crab2.png" alt="crab2"></h3>
+<h3 style="color:orchid;" id="cr2">crab2.class<img src="crab2.png" alt="crab2"></h3>
 <p><img src="crab2_class_cut1.png" alt="crab2_class"></p>
 <p> Siehe <a href="#cr2">crab.class</a></p>
-<h3 style="color:orchid;"id="gam">gameover.class<img src="gameover.png" alt="gameover_class"></h3>
+<h3 style="color:orchid;" id="gam">gameover.class<img src="gameover.png" alt="gameover_class"></h3>
 <p><img src="gameover_class_cut1.png" alt="gameover_class"></p>
 <p>Die Variablen "eaten" und "score" der <a href="#wor">worm.class</a> werden miteinander multipliziert und bei (300 / 250) als "Final Score:" angegeben.</p>
 <h2 style="color:lime;" id="pfz">
