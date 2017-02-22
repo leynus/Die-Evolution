@@ -107,6 +107,6 @@ Pläne für die Zukunft
 <h3 id="cr2">crab2.class</h3><img src="crab2.png" alt="crab2">
 <p><img src="crab2_class_cut1.png" alt="crab2_class">
 </p>
-<h3 id="gam">gameover.class</h3>
+<h3 id="gam">gameover.class<img src="gameover.png" alt="gameover_class"></h3>
 <p><img src="gameover_class_cut1.png" alt="gameover_class">
 </p>
