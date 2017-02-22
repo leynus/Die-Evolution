@@ -22,7 +22,6 @@
 <li><a href="#gao">Game Over</a></li>
 <li><a href="#sco">Der Score</a></li>
 </ul>
-<li><a href="#pfz">PLäne für die Zukunft</a></li>
 <li><a href="#kla">Klassen</a></li>
 <ul>
 <li><a href="#cr1">crab.class</a></li>
@@ -33,6 +32,7 @@
 <li><a href="#cr2">crab2.class</a></li>
 <li><a href="#gam">gameover.class</a></li>
 </ul>
+<li><a href="#pfz">PLäne für die Zukunft</a></li>
 </ul>
 <h2 style="color:green;" id="anf">
 Anfänge
@@ -110,10 +110,6 @@ Damit wir mit verschiedenen Klassen Zugriff auf die Variablen haben, sind diese 
 Um eine taktische Idee notwendig zu machen beim Spielen dieses Spiels haben wir diese beiden „Scores“ multipliziert zu einem Gesamtscore, der am Ende durch folgenden Code angezeigt wird:<br>
 <mark>getWorld().showText („Final Score“ + Worm.eaten * Worm.score, 300, 250)</mark>
 Anregungen zu dieser Einführung gab uns folgendes <a href="https://youtu.be/ubsC4PR2WjI">Video</a> von dem Erfinder Greenfoot's.</p>
-<h2 style="color:lime;" id="pfz">
-Pläne für die Zukunft
-</h2>
-<p>In Zukunft stellen wir uns vor, unsere Kenntnisse aus Greenfoot und der html-Gestaltung zu Nutzen, um ein größeres und anspruchsvolleres Projekt in Angriff zu nehmen.</p>
 <h2>Klassen</h2>
 <h3 id="cr1">crab.class<img src="crab.png" alt="crab"></h3>
 <p><img src="crab_class_cut1.png" alt="crab_class">
@@ -154,3 +150,7 @@ Ist der Actor am Rand angelangt, wird der World befehligt, ein Objekt der <a hre
 <h3 id="gam">gameover.class<img src="gameover.png" alt="gameover_class"></h3>
 <p><img src="gameover_class_cut1.png" alt="gameover_class"></p>
 <p>Die Variablen "eaten" und "score" der <a href="#wor">worm.class</a> werden miteinander multipliziert und bei (300 / 250) als "Final Score:" angegeben.</p>
+<h2 style="color:lime;" id="pfz">
+Pläne für die Zukunft
+</h2>
+<p>In Zukunft stellen wir uns vor, unsere Kenntnisse aus Greenfoot und der html-Gestaltung zu Nutzen, um ein größeres und anspruchsvolleres Projekt in Angriff zu nehmen.</p>
